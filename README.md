@@ -7,7 +7,7 @@
 
 ### Links and Resources
 
-- [submission PR]()
+- [submission PR](https://github.com/401-advanced-javascript-anas/notesy/pull/2)
 
 
 ### Modules
@@ -18,7 +18,7 @@
 
 #### How to initialize/run your application 
 
-- `node index.js -a 'not1'`
+- `node index.js -a 'note1'`
 
 #### How to use your library 
 #### Tests
@@ -26,4 +26,4 @@
 
 #### UML
 
-![UML Diagram](./assets/1.jpg)
+![UML Diagram](./assests/1.jpg)
