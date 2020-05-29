@@ -3,8 +3,24 @@
 // importing the files input and notes from the lib folder.
 const Input = require('./lib/input.js');
 const Notes = require('./lib/notes.js');
+const mongoose = require('mongoose');
 
-// creatinf a new input and notes from the constructors.
-const options = new Input();
 
-const newNote = new Notes(options); // passing options inside the notes to give it the arg.
+const MONGOOSE_URI = 'mongodb://localhost:27017/notes';
+
+
+mongoose.connect(MONGOOSE_URI, 
+  { useNewUrlParser: true, 
+    useUnifiedTopology: true,
+    useFindAndModify: false },
+);
+
+
+async function progs() {
+  const arg = new Input();
+  const note = new Notes();
+  await note.execute(arg);
+  mongoose.disconnect();
+}
+  
+progs();

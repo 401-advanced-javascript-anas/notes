@@ -7,7 +7,8 @@
     "lib": "lib"
   },
   "scripts": {
-    "test": "jest"
+    "test": "jest --coverage --verbose",
+    "lint": "eslint '**/*.js'"
   },
   "repository": {
     "type": "git",
@@ -21,9 +22,13 @@
   },
   "homepage": "https://github.com/401-advanced-javascript-anas/notesy#readme",
   "dependencies": {
+    "@code-fellows/supergoose": "^1.0.2",
+    "colors": "^1.4.0",
     "eslint": "^7.0.0",
     "minimist": "^1.2.5",
-    "notes": "0.0.4"
+    "mongoose": "^5.9.15",
+    "notes": "0.0.4",
+    "superagent": "^5.2.2"
   },
   "devDependencies": {
     "jest": "^26.0.1"
