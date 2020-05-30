@@ -3,7 +3,7 @@
 // interface to communicate with notes schema.
 const schema = require('./notes-schema');
 
-class NotesCRUD {
+class CRUD {
 
   constructor() {
 
@@ -33,4 +33,4 @@ class NotesCRUD {
   }
 }
 
-module.exports = NotesCRUD;
+module.exports = CRUD;

@@ -74,21 +74,6 @@ describe('Notes Module', () => {
     expect(console.log).toHaveBeenCalled();
   });
 
-  it('displayStyle()', () => {
-    let options = new Notes();
-    let input = [{ text: 'hii', category: 'school', _id: '5ec42429d7c4e1070fc613c6' }];
-    options.displayStyle(input);
-    expect(console.log).toHaveBeenCalled();
-  });
-
-  it('displayStyle()', () => {
-    let options = new Notes();
-    let input = '';
-    options.displayStyle(input);
-    expect(console.log).toHaveBeenCalled();
-  });
-});
-
 
 
 
