@@ -1,20 +1,20 @@
 'use strict';
-// implement the CRUD operations in notes class.
-// interface to communicate with notes schema.
+
+
 const schema = require('./notes-schema');
 
-class CRUD {
+class NotesCRUD {
 
   constructor() {
 
   }
 
+  // **********************************************************\\
+
   async get(category) {
-    // if you pass an id for me i will get you the record by id
     if (category) {
       return await schema.find({'category':category});
     } else {
-      // else I think you mean to fetch everything
       return await schema.find({});
     }
   }
@@ -33,4 +33,4 @@ class CRUD {
   }
 }
 
-module.exports = CRUD;
+module.exports = NotesCRUD;
